@@ -1,0 +1,28 @@
+.header {
+    height: 100vh;
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    // &__logo {}
+    &__image {
+        height: 100%;
+    }
+    &__heading {
+        text-align: center;
+        h2 {
+            font-size: 5rem;
+        }
+    }
+    &__cta {
+        button {
+            &:last-child {
+                margin-left: 2rem;
+            }
+        }
+    }
+}

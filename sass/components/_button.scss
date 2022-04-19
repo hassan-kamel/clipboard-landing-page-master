@@ -1,0 +1,19 @@
+.btn {
+    border: 0;
+    padding: 1.5rem 3rem;
+    border-radius: 100px;
+    color: var(--color-white);
+    font-size: 2rem;
+    cursor: pointer;
+    &:active {
+        filter: brightness(120%);
+    }
+    &--cyan {
+        background-color: var(--color-strong-cyan);
+        box-shadow: 0 3px 0px var(--color-strong-cyan-shadow);
+    }
+    &--blue {
+        background-color: var(--color-light-blue);
+        box-shadow: 0 3px 0px var(--color-light-blue-shadow);
+    }
+}

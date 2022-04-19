@@ -1,0 +1,126 @@
+:root {
+  --color-strong-cyan: rgb(38, 186, 164);
+  --color-strong-cyan-shadow: rgb(24, 156, 134);
+  --color-light-blue: rgb(97, 115, 255);
+  --color-light-blue-shadow: rgb(56, 71, 187);
+  --color-dark-grayish-blue: rgb(76, 84, 93);
+  --color-grayish-blue: rgb(159, 171, 178);
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(0, 0, 0);
+  --primary-font: "Bai Jamjuree", sans-serif;
+  --bold-font: 600;
+  --regular-font: 400;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: var(--primary-font);
+}
+
+.container {
+  max-width: 115rem;
+  margin: 0 auto;
+}
+
+.header {
+  height: 100vh;
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.header__image {
+  height: 100%;
+}
+.header__heading {
+  text-align: center;
+}
+.header__heading h2 {
+  font-size: 5rem;
+}
+.header__cta button:last-child {
+  margin-left: 2rem;
+}
+
+.primary-heading {
+  max-width: 65rem;
+}
+.primary-heading h2 {
+  font-weight: var(--bold-font);
+  font-size: 4rem;
+  color: var(--color-dark-grayish-blue);
+  margin-bottom: 2rem;
+}
+.primary-heading p {
+  color: var(--color-grayish-blue);
+}
+
+.btn {
+  border: 0;
+  padding: 1.5rem 3rem;
+  border-radius: 100px;
+  color: var(--color-white);
+  font-size: 2rem;
+  cursor: pointer;
+}
+.btn:active {
+  filter: brightness(120%);
+}
+.btn--cyan {
+  background-color: var(--color-strong-cyan);
+  box-shadow: 0 3px 0px var(--color-strong-cyan-shadow);
+}
+.btn--blue {
+  background-color: var(--color-light-blue);
+  box-shadow: 0 3px 0px var(--color-light-blue-shadow);
+}
+
+.features {
+  margin-bottom: 5rem;
+}
+.features__heading {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+.features__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.features__image-box {
+  margin-left: -4rem;
+}
+.features__image {
+  width: 100%;
+}
+.features__content {
+  margin-right: 10rem;
+}
+.features__item {
+  max-width: 40rem;
+  margin-bottom: 4rem;
+}
+.features__item h2 {
+  font-size: 2.5rem;
+}
+
+/*# sourceMappingURL=copmiled.css.map */
