@@ -1,3 +1,8 @@
+@use "../utilility" as *;
 .availability {
     background: none;
+    height: auto;
+    @include respond(mobile) {
+        margin: 100rem 0;
+    }
 }

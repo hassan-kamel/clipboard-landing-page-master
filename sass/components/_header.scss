@@ -1,6 +1,8 @@
 @use "../utilility" as *;
 .header {
-    height: 100vh;
+    // height: 100vh;
+    padding-top: 10rem;
+    margin-bottom: 10rem;
     background-image: url(../images/bg-header-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -12,6 +14,7 @@
     @include respond(mobile) {
         padding: 0 3rem;
         background-image: url(../images/bg-header-mobile.png);
+        height: 100vh;
     }
     &__logo {
         text-align: center;
