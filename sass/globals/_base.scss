@@ -1,3 +1,4 @@
+@use "../utilility" as *;
 *,
 *::after,
 *::before {
@@ -10,14 +11,22 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    @include respond(mobile) {
+        font-size: 50%;
+    }
 }
 
 body {
     font-size: 1.8rem;
     font-family: var( --primary-font);
+    overflow-x: hidden;
+    @include respond(mobile) {
+        overflow-x: hidden;
+    }
 }
 
 .container {
+    width: 90%;
     max-width: 115rem;
     margin: 0 auto;
 }

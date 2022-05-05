@@ -1,0 +1,71 @@
+@use "../utilility" as *;
+.footer {
+    background-color: var(--color-grayish-blue-half);
+    padding: 5rem 0;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include respond(mobile) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 5rem;
+        }
+    }
+    &__logo {
+        margin-right: 10rem;
+        text-align: center;
+        @include respond(mobile) {
+            margin-right: 0;
+        }
+    }
+    &__image {
+        width: 70%;
+        @include respond(mobile) {
+            width: 50%;
+        }
+    }
+    &__navigation {
+        color: var(--color-dark-grayish-blue);
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 3rem;
+        @include respond(mobile) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__listItem {
+        width: 33.33%;
+        &:hover {
+            color: var(--color-strong-cyan);
+            cursor: pointer;
+        }
+        @include respond(mobile) {
+            width: initial;
+        }
+    }
+    &__socials {
+        flex: 2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @include respond(mobile) {
+            flex: initial;
+            justify-content: center;
+        }
+    }
+    &__social {
+        cursor: pointer;
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+        &:hover path {
+            fill: var(--color-strong-cyan);
+        }
+    }
+}

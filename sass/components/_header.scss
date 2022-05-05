@@ -1,3 +1,4 @@
+@use "../utilility" as *;
 .header {
     height: 100vh;
     background-image: url(../images/bg-header-desktop.png);
@@ -8,9 +9,18 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    // &__logo {}
+    @include respond(mobile) {
+        padding: 0 3rem;
+        background-image: url(../images/bg-header-mobile.png);
+    }
+    &__logo {
+        text-align: center;
+    }
     &__image {
         height: 100%;
+        @include respond(mobile) {
+            height: 80%;
+        }
     }
     &__heading {
         text-align: center;
@@ -19,9 +29,17 @@
         }
     }
     &__cta {
+        text-align: center;
         button {
             &:last-child {
                 margin-left: 2rem;
+                @include respond(mobile) {
+                    margin-left: initial;
+                    margin-top: 1.5rem;
+                }
+            }
+            @include respond(mobile) {
+                width: 80%;
             }
         }
     }

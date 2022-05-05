@@ -1,0 +1,62 @@
+@use "../utilility" as *;
+.workflow {
+    text-align: center;
+    &__heading {
+        text-align: center;
+        margin: 7rem auto;
+    }
+    &__tools {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3rem 0;
+        @include respond(mobile) {
+            display: block;
+        }
+    }
+    &__tool {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+        &:not(:last-child) {
+            margin-right: 3.5rem;
+            @include respond(mobile) {
+                margin-right: 0;
+                margin-bottom: 7rem;
+            }
+        }
+    }
+    &__iconBox {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__icon {}
+    &__toolHeading {
+        flex: 2;
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+    &__customers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10rem;
+        flex-wrap: wrap;
+        @include respond(mobile) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__customer {
+        &:not(:last-child) {
+            @include respond(mobile) {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}

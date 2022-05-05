@@ -1,0 +1,20 @@
+@use "../utilility" as *;
+.accessibility {
+    text-align: center;
+    margin: 10rem 0;
+    @include respond(mobile) {}
+    &__heading {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+    &__preview {
+        text-align: center;
+    }
+    &__image {
+        width: 70%;
+        @include respond(mobile) {
+            width: 100%;
+        }
+    }
+}
